@@ -8,5 +8,5 @@ A collection of scripts for working with direct RNA/cDNA data.
 
 ```
 minimap2 -t 8 -x map-ont -p0 gencode.v27.transcripts.fa.gz direct_rna_reads.fastq > mappings.paf
-python nanopore_transcript_abundance.py -i NA12878-DirectRNA.pass.dedup.to_transcripts.paf > abundance.tsv
+python nanopore_transcript_abundance.py -i mappings.paf > abundance.tsv
 ```
